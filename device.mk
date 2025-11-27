@@ -17,6 +17,10 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 3168
 TARGET_SCREEN_WIDTH := 1440
 
+#DeviceSettings
+PRODUCT_PACKAGES += \
+  DeviceSettings 
+
 # Display
 PRODUCT_PACKAGES += \
     OplusLtpo
@@ -28,7 +32,9 @@ PRODUCT_COPY_FILES += \
 TARGET_HAS_UDFPS := true
 
 # LiveDisplay
-$(call soong_config_set,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AF,true)
+$(call soong_config_set,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_AF,false)
+$(call soong_config_set,OPLUS_LINEAGE_LIVEDISPLAY_HAL,ENABLE_SE,false)
+
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \

@@ -27,4 +27,8 @@
     -->
     <integer name="config_vibration_supported_intensity_levels">3</integer>
 
+    <!-- AlphaDroid Device Settings -->
+    <bool name="config_show_smooth_display">false</bool>
+
 </resources>
+
