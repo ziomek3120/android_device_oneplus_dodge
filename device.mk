@@ -79,5 +79,8 @@ $(call soong_config_set,OPLUS_LINEAGE_VIBRATOR_HAL,INCLUDE_DIR,$(LOCAL_PATH)/vib
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8750-common/common.mk)
 
+# Call the BCR setup
+$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/dodge/dodge-vendor.mk)
