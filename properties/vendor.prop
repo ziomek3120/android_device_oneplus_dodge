@@ -1,8 +1,5 @@
 # Bluetooth
 bluetooth.device.default_name=OnePlus 13
 
-# Device name
-ro.product.marketname=OnePlus 13
-
 # USB
 vendor.usb.product_string=OnePlus 13
