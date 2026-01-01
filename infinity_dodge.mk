@@ -12,9 +12,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/dodge/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_dodge
+# Maintainer Name
+INFINITY_MAINTAINER := "unboxorg"
+
+# Whether Including Google Apps
+WITH_GAPPS := true
+
+PRODUCT_NAME := infinity_dodge
 PRODUCT_DEVICE := dodge
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
